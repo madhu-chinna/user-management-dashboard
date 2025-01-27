@@ -1,0 +1,119 @@
+.user-list {
+    margin: 20px auto; /* Center the table and add spacing */
+    padding: 10px;
+    overflow-x: auto; /* Add horizontal scroll on smaller screens */
+    border-radius: 10px; /* Round edges of the table container */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for the container */
+    background-color: #f9f9f9; /* Subtle background color for contrast */
+  }
+  
+  .user-list table {
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* Remove gaps between table cells */
+  }
+  
+  .user-list th,
+  .user-list td {
+    text-align: left; /* Align text to the left */
+    padding: 10px 15px; /* Add padding for better readability */
+    font-size: clamp(0.9rem, 2vw, 1rem); /* Responsive font size */
+  }
+  
+  .user-list th {
+    background-color: #4caf50; /* Header background */
+    color: white; /* White text for header */
+    text-transform: uppercase; /* Capitalize header text */
+    font-weight: bold; /* Make header bold */
+    position: sticky; /* Keep header sticky */
+    top: 0; /* Sticky position for scrolling */
+    z-index: 1;
+  }
+  
+  .user-list tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+  }
+  
+  .user-list tr:hover {
+    background-color: #d4f5d4; /* Highlight row on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .user-list td button {
+    padding: 6px 10px; /* Button padding */
+    margin-right: 5px; /* Space between buttons */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Round button edges */
+    cursor: pointer; /* Pointer cursor */
+    transition: all 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  .user-list td button:first-of-type {
+    background-color: #2196f3; /* Blue background for Edit */
+    color: white; /* White text */
+  }
+  
+  .user-list td button:first-of-type:hover {
+    background-color: #1e88e5; /* Darker blue on hover */
+  }
+  
+  .user-list td button:last-of-type {
+    background-color: #f44336; /* Red background for Delete */
+    color: white; /* White text */
+  }
+  
+  .user-list td button:last-of-type:hover {
+    background-color: #e53935; /* Darker red on hover */
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px; /* Space between pagination buttons */
+  }
+  
+  .pagination-button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination-button:disabled {
+    background-color: #c8e6c9;
+    cursor: not-allowed;
+  }
+  
+  .pagination-button:hover:not(:disabled) {
+    background-color: #45a049;
+  }
+  
+  .pagination-info {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  
+
+
+
+/* UserList.css */
+/* .user-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-list th, .user-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .user-list th {
+    background-color: #f4f4f4;
+  } */
